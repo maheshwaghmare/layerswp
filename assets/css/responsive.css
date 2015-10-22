@@ -600,7 +600,10 @@ Author URI: http://www.oboxthemes.com/
     .pull-right-11{margin-right: -93.5%;}
 
 
-   .column.last{margin-right: 0px;}
+    .column.last{margin-right: 0px;}
+    .column.last + .column{
+        clear: left;
+    }
 
 /*-------------------------------*/
 /*- HEADERS ---------------------*/

@@ -17,10 +17,13 @@ do_action( 'layers_before_logo' ); ?>
 
 	<?php if('blank' != get_theme_mod('header_textcolor') ) { ?>
 		<div class="site-description">
-			<?php do_action( 'layers_before_site_description' ); ?>
-			<h3 class="sitename sitetitle"><a href="<?php echo home_url(); ?>"><?php echo get_bloginfo( 'title' ); ?></a></h3>
-			<p class="tagline"><?php echo get_bloginfo( 'description' ); ?></p>
-			<?php do_action( 'layers_after_site_description' ); ?>
+			<?php if(is_home() || is_front_page() ) { ?>
+				<h1 class="sitename sitetitle"><a href="<?php echo home_url(); ?>"><?php echo get_bloginfo( 'title' ); ?></a></h1>
+				<h2 class="tagline"><?php echo get_bloginfo( 'description' ); ?></h2>
+			<?php } else { ?>
+				<span class="sitename sitetitle"><a href="<?php echo home_url(); ?>"><?php echo get_bloginfo( 'title' ); ?></a></span>
+				<span class="tagline"><?php echo get_bloginfo( 'description' ); ?></span>
+			<?php } ?>
 		</div>
 	<?php } ?>
 

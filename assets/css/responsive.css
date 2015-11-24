@@ -478,13 +478,13 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
     /*---------------------------*/
     /*- CLOSE OFF CANVAS --------*/
-    .admin-bar section[class*=' off-canvas-'] .close-canvas{
+    .admin-bar aside[class*=' off-canvas-'] .close-canvas{
         top: 46px;
     }
 
     /*---------------------------*/
     /*- OFF CANVAS SIDEBAR ------*/
-    .admin-bar section[class*=" off-canvas-"]{
+    .admin-bar aside[class*=" off-canvas-"]{
         padding-top: 47px;
     }
 
@@ -899,7 +899,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
     /*---------------------------*/
     /*- OFF CANVAS MENU ---------*/
-    section[class*=' off-canvas-'] .nav-mobile{
+    aside[class*=' off-canvas-'] .nav-mobile{
         display: none;
     }
 

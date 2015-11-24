@@ -837,11 +837,11 @@ object{
     .close-canvas:hover{
         color: #fff;
     }
-    .admin-bar section[class*=' off-canvas-'] .close-canvas{
+    .admin-bar aside[class*=' off-canvas-'] .close-canvas{
         top: 32px;
     }
 
-    section[class*=' off-canvas-']{
+    aside[class*=' off-canvas-']{
         padding-top: 30px;
         position: fixed;
         top: 0;
@@ -893,34 +893,34 @@ object{
 
     /*---------------------------*/
     /*- OFF CANVAS WIDGETS ------*/
-    section[class*=' off-canvas-'] .sub-menu li{
+    aside[class*=' off-canvas-'] .sub-menu li{
         width: auto;
     }
-    section[class*=' off-canvas-'] li{
+    aside[class*=' off-canvas-'] li{
         padding: 5px 0;
     }
-    section[class*=' off-canvas-'] li a{
+    aside[class*=' off-canvas-'] li a{
         color: rgba(255, 255, 255, 0.8);
     }
-    section[class*=' off-canvas-'] .section-nav-title{
+    aside[class*=' off-canvas-'] .section-nav-title{
         color: #888;
     }
-    section[class*=' off-canvas-'] .widget.widget_nav_menu{
+    aside[class*=' off-canvas-'] .widget.widget_nav_menu{
         padding: 20px;
     }
-    section[class*=' off-canvas-'] .widget.widget_nav_menu li{
+    aside[class*=' off-canvas-'] .widget.widget_nav_menu li{
         display: block;
         margin: 0;
         text-align: left;
     }
-    section[class*=' off-canvas-'] .searchform label{
+    aside[class*=' off-canvas-'] .searchform label{
         display: none;
     }
-    section[class*=' off-canvas-'] .searchform input[type="text"]{
+    aside[class*=' off-canvas-'] .searchform input[type="text"]{
         background: none repeat scroll 0% 0% rgb(51, 51, 51);
         border: 2px solid rgb(85, 85, 85);
     }
-    section[class*=' off-canvas-'] .searchform input[type="submit"]{
+    aside[class*=' off-canvas-'] .searchform input[type="submit"]{
         display: block;
         width: 100%;
         height: 32px;
@@ -931,19 +931,19 @@ object{
 
         /*-----------------------*/
         /*- OFF CANVAS MENU -----*/
-        section[class*=' off-canvas-'] .nav-mobile{
+        aside[class*=' off-canvas-'] .nav-mobile{
             margin-top: 0;
             padding-top: 0;
             position: relative;
             z-index: 1;
         }
-        .admin-bar section[class*=' off-canvas-'] .nav-mobile{
+        .admin-bar aside[class*=' off-canvas-'] .nav-mobile{
             padding-top: 20px;
         }
-        section[class*=' off-canvas-'] .nav-vertical li{
+        aside[class*=' off-canvas-'] .nav-vertical li{
             padding: 0;
         }
-        section[class*=' off-canvas-'] .nav-vertical .sub-menu{
+        aside[class*=' off-canvas-'] .nav-vertical .sub-menu{
             display: block;
             width: auto;
             visibility: visible;
@@ -953,7 +953,7 @@ object{
             box-shadow: none;
             font-size: 1.2rem;
         }
-        section[class*=' off-canvas-'] .nav-vertical .sub-menu li{
+        aside[class*=' off-canvas-'] .nav-vertical .sub-menu li{
             border: none;
         }
 

@@ -3,7 +3,7 @@
 				<a href="#top"><?php _e( 'Back to top' , 'layerswp' ); ?></a>
 			</div> <!-- back-to-top -->
 
-		</section>
+		</main><!-- END / MAIN SITE .wrapper-content -->
 
 		<?php do_action( 'layers_before_footer' ); ?>
 
@@ -51,7 +51,7 @@
 		</footer><!-- END / FOOTER -->
 		<?php do_action( 'layers_after_footer' ); ?>
 
-	</section><!-- END / MAIN SITE #wrapper -->
+	</div><!-- END / MAIN SITE .wrapper-site -->
 	<?php do_action( 'layers_after_site_wrapper' ); ?>
 	<?php wp_footer(); ?>
 </body>

@@ -17,11 +17,11 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 /*-------------------------------*/
 
     .advanced-layout{
-		display: -webkit-box;
+        display: -webkit-box;
         display: -webkit-flex;
         display: flex;
 
-		-webkit-box-orient: horizontal;
+        -webkit-box-orient: horizontal;
         -webkit-flex-direction: row;
         flex-direction: row;
     }

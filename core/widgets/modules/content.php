@@ -132,7 +132,7 @@ if( !class_exists( 'Layers_Content_Widget' ) ) {
 
 			<section id="<?php echo esc_attr( $widget_id ); ?>" class="<?php echo esc_attr( $widget_container_class ); ?>" <?php echo $this->custom_anchor( $widget ); ?>>
 				<?php if( '' != $this->check_and_return( $widget , 'title' ) ||'' != $this->check_and_return( $widget , 'excerpt' ) ) { ?>
-					<div class="container clearfix">
+					<header class="container clearfix">
 						<?php /**
 						* Generate the Section Title Classes
 						*/
@@ -150,7 +150,7 @@ if( !class_exists( 'Layers_Content_Widget' ) ) {
 								<div class="excerpt"><?php echo $widget['excerpt']; ?></div>
 							<?php } ?>
 						</div>
-					</div>
+					</header>
 				<?php } ?>
 				<?php if ( ! empty( $widget[ 'columns' ] ) ) { ?>
 					<div class="row <?php echo $this->get_widget_layout_class( $widget ); ?> <?php echo $this->check_and_return( $widget , 'design', 'liststyle' ); ?>">

@@ -1644,6 +1644,7 @@ object{
         padding: 0;
     }
     .sitename{
+        display: block;
         font-size: 1.8rem;
         font-weight: 700;
     }
@@ -1651,8 +1652,10 @@ object{
         font-size: 1.6rem;
     }
     .tagline{
+        display: block;
         font-size: 1.2rem;
         font-weight: 700;
+        color: rgba(0, 0, 0, 0.55);
     }
     .site-logo-link,
     .mark{

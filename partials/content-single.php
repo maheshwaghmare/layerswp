@@ -18,7 +18,7 @@ if( !isset( $layers_page_title_shown ) ) { ?>
 				<?php /**
 				* Display the Post Date only
 				*/
-				layers_post_meta( get_the_ID(), array( 'date' ) , 'h5', 'meta-info' ); ?>
+				layers_post_meta( get_the_ID(), array( 'date' ) , 'div', 'meta-info' ); ?>
 			<?php do_action('layers_after_single_title_meta'); ?>
 		<?php } // if post ?>
 		<?php do_action('layers_before_single_title'); ?>

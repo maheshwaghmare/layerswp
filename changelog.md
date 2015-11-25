@@ -1,6 +1,14 @@
 # Layers Changelog
 
 =======
+##1.2.10
+### xx Nov 2015
+
+* **Tweak** - Updated Envato Marketplace to list themes by last updated by default. *MP*
+* **Tweak** - Updated Envato Marketplace to show the filter information as an intro. *MP*
+* **Tweak** - Updated the Layers Messenger to show plugin version. *MP*
+
+=======
 ##1.2.9
 ### 20 Nov 2015
 

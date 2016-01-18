@@ -577,3 +577,77 @@ if( !function_exists( 'layers_excerpt_class' ) ) {
 } // layers_excerpt_class
 add_filter( "the_excerpt", "layers_excerpt_class" );
 add_filter( "get_the_excerpt", "layers_excerpt_class" );
+
+
+//dev4press functions to assits in rewrite debugging
+function dev4press_debug_rewrite_rules() {
+	global $wp_rewrite;
+	echo '<div>';
+	if (!empty($wp_rewrite->rules)) {
+		echo '<h5>Rewrite Rules</h5>';
+		echo '<table><thead><tr>';
+		echo '<td>Rule</td><td>Rewrite</td>';
+		echo '</tr></thead><tbody>';
+		foreach ($wp_rewrite->rules as $name => $value) {
+			echo '<tr><td>'.$name.'</td><td>'.$value.'</td></tr>';
+		}
+		echo '</tbody></table>';
+	}
+	else {
+		echo 'No rules defined.';
+	}
+	echo '</div>';
+}
+//dev4press functions to assits in rewrite debugging
+function dev4press_debug_page_request() {
+	global $wp, $template;
+	/*
+	define("D4P_EOL", "\r\n");
+	echo '<!--Request: ';
+	echo empty($wp->request) ? "None" : esc_html($wp->request);
+	echo ' -->'.D4P_EOL;
+	echo '<!--Matched Rewrite Rule: ';
+	echo empty($wp->matched_rule) ? None : esc_html($wp->matched_rule);
+	echo ' -->'.D4P_EOL;
+	echo '<!--Matched Rewrite Query: ';
+	echo empty($wp->matched_query) ? "None" : esc_html($wp->matched_query);
+	echo ' -->'.D4P_EOL;
+	echo '<!--Loaded Template: ';
+	echo basename($template);
+	echo ' -->'.D4P_EOL;
+	*/
+	define("D4P_EOL", "\r\n");
+	echo '<div class="rewrite-rules">';
+	echo '<b>Request:</b> ';
+	echo empty($wp->request) ? 'None' : esc_html($wp->request);
+	echo '<br/>'.D4P_EOL;
+	echo '<b>Matched Rewrite Rule:</b> ';
+	echo empty($wp->matched_rule) ? 'None' : esc_html($wp->matched_rule);
+	echo '<br/>'.D4P_EOL;
+	echo '<b>Matched Rewrite Query:</b> ';
+	echo empty($wp->matched_query) ? 'None' : esc_html($wp->matched_query);
+	echo '<br/>'.D4P_EOL;
+	echo '<b>Loaded Template:</b> ';
+	echo basename($template);
+	echo '<br/>'.D4P_EOL;
+	echo '</div>';
+}
+
+add_action('init','setup_rewrites');
+//sets up rewrites
+function setup_rewrites() {
+	
+	/*
+	//tags fopr the tour cat and subcat
+	add_rewrite_tag('%product_type_tax%','([^/]+)');
+	//add_rewrite_tag('%tour_subcat%','([^/]+)');
+	
+	//setup permastructure for tour type
+	$tour_struct = 'product/%product_type_tax%/%postname%';
+	//$tour_struct = 'tours/%tour_cat%/%tour_subcat%/%postname%';
+	add_permastruct('product', $tour_struct, false);
+	add_rewrite_rule( 'product/?$', 'index.php?post_type=product', 'top' );	  //sets up main archive page
+	*/
+	
+	add_rewrite_rule( 'product/?$', 'index.php?post_type=product', 'top' );	  //sets up main archive page
+}

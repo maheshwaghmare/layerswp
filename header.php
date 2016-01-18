@@ -6,6 +6,15 @@
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
+
+	<?php
+	echo '<br>-------------------------------------------------<br><br>';
+	dev4press_debug_rewrite_rules();
+	echo '<br>-------------------------------------------------<br><br>';
+	dev4press_debug_page_request();
+	echo '<br>-------------------------------------------------<br><br>';
+	?>
+	
 	<?php get_sidebar( 'off-canvas'); ?>
 	<?php do_action( 'layers_before_site_wrapper' ); ?>
 	<section <?php layer_site_wrapper_class(); ?>>
